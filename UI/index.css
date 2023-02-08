@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  box-sizing: border-box;
 }
 body {
   background-image: url(background\ img.png);
@@ -90,6 +91,7 @@ h1 {
   margin: 10px;
   background: white;
   padding: 16px;
+  flex: 1;
 }
 .amigo {
   display: flex;
@@ -132,15 +134,13 @@ h5 {
   padding: 10px;
   margin: 10px;
 }
-#adminApp {
-  display: flex;
-}
+
 #blog-container,
 #project-container {
   overflow-x: scroll;
 }
 
-@media only screen and (max-width: 1232px) {
+/* @media only screen and (max-width: 1232px) {
   .flex {
     flex-direction: column;
   }
@@ -150,4 +150,91 @@ h5 {
   #about {
     padding: 4rem 2rem;
   }
+} */
+button,
+[type='submit'],
+[type='file'] {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#App,
+#adminApp {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: 0;
+  display: block;
+}
+.blog-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+nav,
+aside {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+  top: 0;
+}
+nav {
+  margin: auto;
+}
+aside {
+  flex-direction: column;
+  width: auto;
+  max-width: 200px;
+  position: relative;
+  background: white;
+}
+nav a,
+aside a {
+  text-decoration: none;
+  padding: 10px;
+  color: var(--color-white);
+}
+#fall {
+  flex: 3;
+  display: row;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+}
+.sweet {
+  background: blue;
+}
+.honey {
+  background: green;
+}
+.soon {
+  background: darkgrey;
+}
+.honey,
+.soon,
+.sweet {
+  height: 100px;
+  width: 150px;
+  display: colum;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
 }
