@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Brand</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="adminApp">
+      <nav>
+        <a href="addblog.html">Create blog</a>
+        <a href="index.html">HOME</a>
+        <a href="index.html#SKILLS">SKILLS</a>
+        <a href="index.html#PORTFOLIO">PORTFOLIO</a>
+        <a href="index.html#BLOG">BLOG</a>
+        <a href="index.html#CONTACT ME">CONTACT ME</a>
+        <a href="login.html">LOG IN</a>
+      </nav>
+      <aside>
+        <a href="addblog.html">Create blog</a>
+        <a href="index.html">HOME</a>
+        <a href="index.html#SKILLS">SKILLS</a>
+        <a href="index.html#PORTFOLIO">PORTFOLIO</a>
+        <a href="index.html#BLOG">BLOG</a>
+        <a href="index.html#CONTACT ME">CONTACT ME</a>
+        <a href="login.html">LOG IN</a>
+      </aside>
+      <main>
+        <div class="horizontal">
+          <div class="huge">
+            <h3>Create a blog</h3>
+            <form action="" id="contact-form">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="username" />
+              </div>
+              <div>
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image" />
+              </div>
+              <div>
+                <label for="content">Content</label>
+                <textarea rows="3" id="content" name="content"></textarea>
+              </div>
+              <div>
+                <button class="look" type="submit">Create a blog</button>
+              </div>
+            </form>
+          </div>
+          <div class="horizontal" style="padding: 100px">
+            <h3>Image preview</h3>
+            <div style="width: 200px; height: 100px; background-color: aliceblue" id="image-previewer"></div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

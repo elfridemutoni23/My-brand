@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+}
+body {
+  background-image: url(background\ img.png);
+}
+.m3 * {
+  margin: 30px;
+}
+.flex-container {
+  display: flex;
+  background-color: white;
+  max-width: 1100px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  align-items: center;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+#home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 16px;
+}
+h1 {
+  font-size: 30px;
+}
+p {
+  font-size: 22px;
+}
+#attribute {
+  margin-top: 10px;
+  text-align: left;
+}
+.low {
+  display: flex;
+}
+.alone {
+  display: flex;
+  background-color: white;
+  max-width: 1100px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  align-items: center;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.meme {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+}
+.sun {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+.all {
+  display: flex;
+  background-color: white;
+  max-width: 1100px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  align-items: center;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.huge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background: white;
+  padding: 16px;
+}
+.amigo {
+  display: flex;
+}
+.dami {
+  background-color: blue;
+  margin: 5px;
+  justify-content: space-between;
+}
+.hood {
+  background-color: white;
+  border: 5px solid blue;
+  margin: 5px;
+}
+h1 {
+  text-align: center;
+}
+/* h2 {
+  flex-direction: row;
+}
+h5 { 
+  background: white;
+  height: 30px;
+}*/
+.hi {
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  background: white;
+  border-radius: 50px;
+}
+.horizontal {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.smooth {
+  padding: 10px;
+  margin: 10px;
+}
+#adminApp {
+  display: flex;
+}
+#blog-container,
+#project-container {
+  overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1232px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1232px) {
+  #home,
+  #about {
+    padding: 4rem 2rem;
+  }
+}
